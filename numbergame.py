@@ -33,11 +33,11 @@ i = 1
 
 # Check if, guessed number = computer generated number
 while (guess != realNum):
-    if int(guess) == int(realNum):
+    if (guess == realNum):
         print('Good job! It only took you ' + str(i) + ' tries.')
-    if int(guess) < int(realNum):
+    elif (guess < realNum):
         print('No, that is too low. Try again.')
-    elif int(guess) > int(realNum):
+    elif (guess > realNum):
         print('No, that is too high. Try again.')
-    guess = input()
+    user_guess = check_if_valid()
     i += 1
