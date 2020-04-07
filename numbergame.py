@@ -7,12 +7,9 @@ import random
 name = str(input('What is your name?'))
 
 
-print('Well, ' + name + ' I am thinking of a number between 1 and 100. What do you think it is?')
-
-
 # Check if the user entered a valid value
 while(True):
-  try: guess = int(input())
+  try: guess = int(input('Well, ' + name + ' I am thinking of a number between 1 and 100. What do you think it is?'))
   except ValueError:
       print('That is not a valid number. Try again')
       pass
@@ -38,8 +35,3 @@ while (guess != realNum):
         print('No, that is too high. Try again.')
     guess = input()
     i += 1
-
-print('Good job! It only took you ' + (i+1) + ' tries.')
-
-
-
