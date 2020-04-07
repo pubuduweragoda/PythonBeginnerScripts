@@ -11,10 +11,13 @@ print('Well, ' + name + ' I am thinking of a number between 1 and 100. What do y
 
 
 # Check if the user entered a valid value
-try: guess = int(input())
-except ValueError:
-    print('That is not an number. Try again')
-    guess = int(input)
+while(True):
+  try: guess = int(input())
+  except ValueError:
+      print('That is not a valid number. Try again')
+      pass
+  else:
+      break
 
 
 # Generate random number (number that the computer is thinking
