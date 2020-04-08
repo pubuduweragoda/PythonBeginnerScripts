@@ -11,12 +11,13 @@ name = str(input('What is your name?'))
 def check_if_valid():
       # "guess" only exists inside "check_if_valid"
       while(True):
-          try: guess = int(input('Well, ' + name + ' I am thinking of a number between 1 and 100. What do you think it is?'))
-      except ValueError:
-          print('That is not a valid number. Try again')
-          pass
-      else:
-          break
+          try: 
+              guess = int(input('Well, ' + name + ' I am thinking of a number between 1 and 100. What do you think it is?'))
+          except ValueError:
+              print('That is not a valid number. Try again')
+              pass
+          else:
+              break
 
 
 # call "check_if_valid()" and store the guessed value in "user_guess"
